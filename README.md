@@ -67,6 +67,9 @@ Uses the official OpenAI Python SDK and the **Responses API** with a model name 
 Python 3.10+, `discord.py` 2.x, `openai` SDK, SQLite (standard library, WAL mode, async through worker threads), Pillow (optional, diagrams), `python-dotenv`. Dev only: `pytest`, `reportlab`, `Pygments`, `pypdf`.
 
 ## Repository structure
+
+All application code and educational JSON files are kept directly in the repository root. The SQLite database is created automatically under `data/runtime/` when the bot starts.
+
 ```
 mnm-discord-bot/
 ├── main.py              entry point, logging (secret-redacting), cog loading
