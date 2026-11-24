@@ -8,7 +8,7 @@ import discord
 from discord import app_commands
 from discord.ext import commands
 
-from services.openai_service import DISCLAIMER, MODES, AIUnavailable
+from openai_service import DISCLAIMER, MODES, AIUnavailable
 from ui import ERROR, LAB_META, BaseView, CallbackButton, clip, make_embed, present
 
 log = logging.getLogger("mnm.ai")
