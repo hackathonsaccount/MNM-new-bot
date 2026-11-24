@@ -26,8 +26,8 @@ def _tick(flag: bool) -> str:
 
 
 class AdminCog(commands.Cog):
-    mnm = app_commands.Group(name="mnm", description="MNM administration (admins only).", guild_only=True,
-                             default_permissions=discord.Permissions(administrator=True))
+    # Runtime @admin_only checks use ADMIN_ROLE_ID, so custom-role admins can see and use commands.
+    mnm = app_commands.Group(name="mnm", description="MNM administration (admins only).", guild_only=True)
 
     def __init__(self, bot: commands.Bot):
         self.bot = bot
