@@ -1,4 +1,4 @@
-"""Loads and validates the static educational content shipped in data/initial_content/."""
+"""Loads and validates the static educational content shipped in the repository root."""
 from __future__ import annotations
 
 import json
@@ -7,9 +7,9 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
-from services.challenge_service import QuestionBank, question_from_dict, Question
+from challenge_service import QuestionBank, question_from_dict, Question
 
-CONTENT_DIR = Path(__file__).resolve().parent.parent / "data" / "initial_content"
+CONTENT_DIR = Path(__file__).resolve().parent
 
 
 class ContentError(Exception):
