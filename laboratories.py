@@ -16,13 +16,13 @@ from discord import app_commands
 from discord.ext import commands
 
 from quiz_ui import QuestionView
-from services import science_tools as sci
-from services.challenge_service import (
+import science_tools as sci
+from challenge_service import (
     TOPICS, TRIAL_GRACE_SECONDS, TRIAL_POINTS_PER_PROBLEM, TRIAL_TIME_LIMIT_MINUTES, Question,
     check_answer, generate_problem, today_utc, trial_id_for,
 )
-from services.diagrams import render_diagram
-from services.openai_service import DISCLAIMER, AIUnavailable
+from diagrams import render_diagram
+from openai_service import DISCLAIMER, AIUnavailable
 from ui import (
     BRAND, ERROR, LAB_META, BaseView, CallbackButton, lab_footer, make_embed, present, send_error,
 )
