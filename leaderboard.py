@@ -8,7 +8,7 @@ import discord
 from discord import app_commands
 from discord.ext import commands
 
-from services.challenge_service import today_utc, week_id, week_start_iso
+from challenge_service import today_utc, week_id, week_start_iso
 from ui import BRAND, BaseView, CallbackButton, make_embed, present
 
 log = logging.getLogger("mnm.leaderboard")
