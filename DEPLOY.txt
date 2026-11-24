@@ -1,14 +1,21 @@
-MNM Discord Bot — clean deployment package
+MNM Discord Bot — flat-root deployment
 
-Start command:
-python main.py
+Repository layout:
+- All Python modules are in the repository root.
+- All educational JSON files are in the repository root.
+- The SQLite database is created automatically under data/runtime/.
 
 Install command:
 pip install -r requirements.txt
 
-Set the bot's environment variables in FadeHost's environment/settings panel.
-Do not upload a real .env file or expose your Discord token / OpenAI API key.
+Start command:
+python main.py
 
-This package keeps the runtime Python files, cogs, services, and subject JSON data.
-It excludes tests, development dependencies, PDF/documentation exports, helper scripts,
-GitHub workflow files, caches, and the original .env.
+Set the required environment variables in FadeHost's environment/settings panel.
+Required: DISCORD_TOKEN, GUILD_ID, ADMIN_ROLE_ID.
+Optional feature settings include WELCOME_CHANNEL_ID, LOG_CHANNEL_ID,
+TICKET_CATEGORY_ID, SHOWCASE_CHANNEL_ID, MODERATOR_ROLE_ID,
+OPENAI_API_KEY and OPENAI_MODEL.
+
+Do not upload a real .env file or expose your Discord token / OpenAI API key.
+Enable the Server Members Intent and Message Content Intent in the Discord Developer Portal.
