@@ -1,0 +1,14 @@
+MNM Discord Bot — clean deployment package
+
+Start command:
+python main.py
+
+Install command:
+pip install -r requirements.txt
+
+Set the bot's environment variables in FadeHost's environment/settings panel.
+Do not upload a real .env file or expose your Discord token / OpenAI API key.
+
+This package keeps the runtime Python files, cogs, services, and subject JSON data.
+It excludes tests, development dependencies, PDF/documentation exports, helper scripts,
+GitHub workflow files, caches, and the original .env.
