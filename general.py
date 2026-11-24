@@ -8,7 +8,7 @@ from discord import app_commands
 from discord.ext import commands
 
 from config import TAGLINE, WEBSITE_URL
-from services.research_service import OPPORTUNITY_CATEGORIES
+from research_service import OPPORTUNITY_CATEGORIES
 from ui import BRAND, BaseView, make_embed, present, website_button
 
 log = logging.getLogger("mnm.general")
