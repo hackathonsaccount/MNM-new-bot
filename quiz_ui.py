@@ -12,7 +12,7 @@ from typing import Awaitable, Callable, Optional
 
 import discord
 
-from services.challenge_service import DISCIPLINE_NAMES, Question, check_answer
+from challenge_service import DISCIPLINE_NAMES, Question, check_answer
 from ui import BaseView, CallbackButton, ERROR, SUCCESS, make_embed, present
 
 log = logging.getLogger("mnm.quiz")
