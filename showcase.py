@@ -9,7 +9,7 @@ from discord import app_commands
 from discord.ext import commands
 
 from permissions import is_staff
-from services.research_service import (
+from research_service import (
     DESCRIPTION_MAX, DESCRIPTION_MIN, DISCIPLINES, MAX_PENDING_PER_USER, TITLE_MAX, ValidationError,
     validate_submission,
 )
