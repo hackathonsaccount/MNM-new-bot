@@ -10,7 +10,7 @@ from discord import app_commands
 from discord.ext import commands
 
 from permissions import is_staff, staff_only
-from services.moderation_service import (
+from moderation_service import (
     AUTO_TIMEOUT_MINUTES, AUTO_TIMEOUT_WARNINGS, MAX_TIMEOUT_MINUTES, ContentFilter, SpamTracker,
     can_moderate,
 )
