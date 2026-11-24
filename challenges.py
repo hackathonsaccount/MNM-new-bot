@@ -9,7 +9,7 @@ from discord import app_commands
 from discord.ext import commands
 
 from quiz_ui import QuestionView
-from services.challenge_service import (
+from challenge_service import (
     CHAMPIONSHIP_MULTIPLIER, DISCIPLINE_NAMES, Question, championship_points, next_utc_midnight, today_utc,
     week_id, week_start_iso,
 )
