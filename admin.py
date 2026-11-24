@@ -8,11 +8,11 @@ import discord
 from discord import app_commands
 from discord.ext import commands
 
-from cogs.roles import TEAM_ROLES, role_is_safe, panel_embed as roles_panel_embed, RolePanelView
-from cogs.tickets import CATEGORIES, TicketPanelView
+from roles import TEAM_ROLES, role_is_safe, panel_embed as roles_panel_embed, RolePanelView
+from tickets import CATEGORIES, TicketPanelView
 from permissions import admin_only
-from services.moderation_service import normalise_filter_word
-from services.research_service import OPPORTUNITY_CATEGORIES, ValidationError, validate_opportunity
+from moderation_service import normalise_filter_word
+from research_service import OPPORTUNITY_CATEGORIES, ValidationError, validate_opportunity
 from ui import BRAND, ERROR, make_embed, success_embed
 
 log = logging.getLogger("mnm.admin")
