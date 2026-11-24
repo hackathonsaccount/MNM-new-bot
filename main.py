@@ -14,24 +14,24 @@ from discord.ext import commands
 
 from config import Config, ConfigError, WEBSITE_URL, load_config
 from database import Database
-from services.content_service import ContentError, load_content
-from services.openai_service import AIService
+from content_service import ContentError, load_content
+from openai_service import AIService
 from ui import send_error
 
 log = logging.getLogger("mnm")
 
 EXTENSIONS = (
-    "cogs.welcome",
-    "cogs.roles",
-    "cogs.tickets",
-    "cogs.moderation",
-    "cogs.laboratories",
-    "cogs.ai_assistant",
-    "cogs.challenges",
-    "cogs.leaderboard",
-    "cogs.showcase",
-    "cogs.general",
-    "cogs.admin",
+    "welcome",
+    "roles",
+    "tickets",
+    "moderation",
+    "laboratories",
+    "ai_assistant",
+    "challenges",
+    "leaderboard",
+    "showcase",
+    "general",
+    "admin",
 )
 
 
